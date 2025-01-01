@@ -18,7 +18,7 @@ class ProductService {
     return prisma.product.findUnique({
       where: { id: productId },
       include: {
-        brand: true,
+       
         category: true,
       },
     });
