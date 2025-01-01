@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Install dependencies, including dev dependencies for TypeScript types
-RUN npm install --include=dev
+
 
 # Copy the source code into the container
 COPY . .
