@@ -13,6 +13,8 @@ RUN npm install --include=dev
 # Copy the source code into the container
 COPY . .
 
+RUN npx prisma generate
+
 # Compile TypeScript into the build directory
 RUN npm run build
 
